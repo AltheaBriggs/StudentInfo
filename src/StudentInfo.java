@@ -1,11 +1,28 @@
 /**
  * 
- */
+ 
+
 
 /**
  * @author A.briggs
+ * /**
+
  *
+
+ * Name:Althea Briggs 
+
+ * Teacher:Mr.Hardman
+
+ * Assignment #3, Program # 
+
+ * Date Last Modified:Nov.4 
+
+ *
+
  */
+ *
+ */import java.util.Scanner;
+
 public class StudentInfo {
 
 	/**
@@ -13,24 +30,48 @@ public class StudentInfo {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Scanner userInput = new Scanner(System.in);
+		
+		 System.out.println("StudentInfo");
+		 
 
-		 double FirstName;
-         double LastName;
-         double Grade;
-         double StudentID;
-         double Login;
+		 String FirstName;
+         String LastName;
+         int Grade;
+         int StudentID;
+         String Login;
          double SchoolAverage;
 
-         System.out.println(FirstName = Convert.ToDouble(First Name.Text);
-         System.out.println(LastName = Convert.ToDouble(Last Name.Text);
-         System.out.println(Grade = Convert.ToDouble(Grade (9-12).Text);
-         System.out.println(StudentID = Convert.ToDouble(Student ID.Text);
-         System.out.println(SchoolAverage = Convert.ToDouble(School Average.Text);
 
-          
+         System.out.println("firstName: ");
+         firstName = userInput.next();
+        	 
+         System.out.println("lastName: ");
+         lastName = userInput.next();
+         
+         System.out.println("Grade: ");
+         grade = userInput.nextInt();
+         
+         System.out.println("StudentID: ");
+         studentID = userInput.nextInt();
+         
+         System.out.println("Login: ");
+         login = userInput.next();
 
-         Object lbldisplay;
-		lbldisplay.Text:, "Question 1:",  "what is your first Name", "Question 2:", "what is your lastName", "Question 3:"," What grade are you in (9-12) ?", "Question 4:", "what is your student ID?" , "Question 5:",  " What is your login ?" ,  "Question 6: , What is your School Average :",SchoolAverage);
+         System.out.println("School Average: ");
+         schoolAverage = userInput.nextDouble();
+         
+         System.out.println("/n" + "Student info: ");
+         System.out.println(String.format("%-16s"+ firstName, "FirstName: ") );
+         System.out.println(String.format("%-16s"+ lastName, "LastName: ") );
+         System.out.println(String.format("%-16s"+ grade, "Grade: ") );
+         System.out.println(String.format("%-16s"+ studentID, "StudentID: ") );
+         System.out.println(String.format("%-16s"+ login, "Login: ") );
+         System.out.println(String.format("%-16s"+ schoolAverage, "SchoolAverage: ") );
+
+         userInput.close(); 
+
 		
 	}
 
